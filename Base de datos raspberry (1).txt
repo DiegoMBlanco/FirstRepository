@@ -1,0 +1,12 @@
+CREATE DATABASE raspberry_2;
+USE raspberry_1;
+CREATE TABLE ultrasonico (fecha DATE, valor_distancia_cm FLOAT);
+CREATE TABLE adc (fecha DATE, valor_res_luz FLOAT, boltage );
+CREATE TABLE acelerometro (fecha DATE, valor_acel_x FLOAT, valor_acel_y FLOAT, valor_acel_z FLOAT, caida_libre BOOLEAN, tap BOOLEAN, movimiento BOOLEAN);
+CREATE TABLE presion (fecha DATE, valor_temperatura FLOAT, valor_presion FLOAT, valor_altitud FLOAT);
+SHOW tables;
+DESCRIBE ultrasonico;
+DESCRIBE adc;
+DESCRIBE acelerometro;
+DESCRIBE presion;
+DESCRIBE motores;
